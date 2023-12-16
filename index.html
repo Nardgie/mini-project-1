@@ -14,52 +14,64 @@
 
 <body>
     <!--Nav bar here -->
-    <nav class="header ends">
-        <!--Links -->
-        <ul>
-            <li>
-                <a href="#">Github</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
 
-    <section>
-        <!--Heading "My New Website"-->
-        <h1>My New Website</h1>
+        <nav class="nav-bar">
+            <!--Links -->
+            <ul>
+                <li>
+                    <a href="#github">Github</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <section id="main">
+            <!--Heading "My New Website"-->
+            <h1>My New Website</h1>
 
-        <!--photo div in the center (style)-->
-        <img src="./assets/images/image-1.png" alt="square box with text coming soon in center">
-        <!--paragraph here centered-->
-        <p>This is our new little website. Isn't it cool? </p>
-    </section>
+            <!--photo div in the center (style)-->
+            <img src="./assets/images/image-1.png" alt="square box with text coming soon in center">
+            <!--paragraph here centered-->
+            <p>This is our new little website. Isn't it cool? </p>
+        </section>
 
-    <section id="contact-section">
-        <!--Contuct us heading-->
-        <h2>Contact Me</h2>
-        <!--box div-->
-        <div id="contact-box">
-            <form>
-                <label for="fname">First name:</label><br>
-                <!--Remember to inline-->
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
-                <input type="submit" value="Send" class="button">
-            </form>
+        <section id="contact-section">
+            <!--Contuct us heading-->
+            <h2>Contact Me</h2>
+            <!--box div-->
+            <!-- <div id="contact-box"> -->
+                <form>
+                    <div class="form-row">
+                        <label for="fname">First name:</label>
+                        <!--Remember to inline-->
+                        <input type="text" id="fname" name="fname"><br>
+                    </div>
+                    <div class="form-row">    
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Send" class="button">
+                    </div>
+                </form>
+                
+                
+            <!-- </div> -->
+            <!--input form-->
+            <!--submit button-->
+        </section>
+    </main>
 
-            </form>
-        </div>
-        <!--input form-->
-        <!--submit button-->
-    </section>
-
-    <footer class="ends">
+    <!--Footer-->
+    <footer>
         <!--Paragraph center-->
         <p id="footer">&copy; 2023 Room 4 Productions</p>
     </footer>

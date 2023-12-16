@@ -1,33 +1,132 @@
-.button {
-    background-color: #04AA6D;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#contact-box {
-    border: 2px solid grey;
-    position: relative;
-    left: 200px;
-    width: 400px;
-    height: 50px;
+
+form {
+    border: 4px solid green;
     border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    flex-shrink: 0;
 }
 
-input {
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    height: 30px;
+    border-bottom: 10px solid grey;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.form-row label input {
+    flex-shrink: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-right: 10px;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 200;
+    height: 200;
+    position: relative;
+    left: 500px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#contact-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(176, 60, 44, 0.78);
+    height: 250px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    border-top: 2px solid black;
+}
+
+/* #contact-box {
+    width: 100%;
+    padding: 20px;
+} */
+
+/* #fname {
+    width: 200px;
+}
+
+#lname {
+    width: 200px;
+} */
+
+h2 {
+    text-align: center;
+}
+
+/* form {
+    position: relative;
+    left: 400px;
+} */
+
+/* input {
     position: absolute;
-}
+} */
 
-label {
+/* label {
     position: absolute;
     left: 10px;
     top: 10px;
-}
+} */
 
 #footer {
     text-align: center;
@@ -35,4 +134,19 @@ label {
 
 footer {
     background-color: blue;
+    padding: 10px;
+    border-bottom: 8px solid grey;
+    margin: auto;
+}
+
+.button {
+    background-color: #04AA6D;
+    /* Green */
+    border-radius: 10px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
